@@ -1,2 +1,5 @@
-const country = "I Love Bangladesh"
-console.log("Hello To TypeScript", country);
+function multiply(a:number, b:number){
+    return a * b
+}
+
+console.log(multiply(8, 8));

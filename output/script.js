@@ -1,3 +1,5 @@
 "use strict";
-const country = "I Love Bangladesh";
-console.log("Hello To TypeScript", country);
+function multiply(a, b) {
+    return a * b;
+}
+console.log(multiply(8, 8));
