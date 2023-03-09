@@ -1,14 +1,6 @@
 "use strict";
-let Test1;
-let Test2;
-Test1 = 87;
-Test2 = "Monirul";
-let a = [];
-a.push("Monirul", 67, true);
-let c;
-c = {
-    name: "Monirul",
-    age: 34,
-    adult: true
+let myFunc;
+myFunc = (a, b, c = "Welcome Back") => {
+    console.log(`Hello ${a}_${b}`);
 };
-console.log(c);
+myFunc("monirul", 99);

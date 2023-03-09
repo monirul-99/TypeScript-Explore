@@ -1,21 +1,7 @@
-let Test1 : number;
-let Test2 : string;
-Test1 = 87
-Test2 = "Monirul"
+let myFunc: Function;
 
-let a : (string | number | boolean)[] = []
-a.push("Monirul", 67, true)
-
-let  c: {
-    name: string,
-    age : number,
-    adult : boolean
+myFunc = (a : string, b: number, c:any = "Welcome Back") => {
+    console.log(`Hello ${a}_${b}`);
 }
 
-c = {
-    name : "Monirul",
-    age : 34,
-    adult : true
-}
-
-console.log(c);
+myFunc("monirul", 99)
