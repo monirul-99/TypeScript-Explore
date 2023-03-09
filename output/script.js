@@ -1,5 +1,6 @@
 "use strict";
-function multiply(a, b) {
-    return a * b;
-}
-console.log(multiply(8, 8));
+let mixed = ["Monirul", 45, false];
+mixed.push("Islam");
+mixed.push(98);
+mixed.push(true);
+console.log(mixed);

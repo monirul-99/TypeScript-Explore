@@ -1,5 +1,6 @@
-function multiply(a:number, b:number){
-    return a * b
-}
+let mixed = ["Monirul", 45, false]
+mixed.push("Islam")
+mixed.push(98)
+mixed.push(true)
 
-console.log(multiply(8, 8));
+console.log(mixed);
