@@ -1,3 +1,5 @@
+import {player} from "./class/player.js"
+
 let add: (x: number, y: number) => number
 
 add = (a: number , b : number) => {
@@ -32,27 +34,27 @@ return `Id Number : ${a} || Name : ${userInfo.name} Age ${userInfo.age}`
 console.log(userDetails(56, {name: "Monirul Islam", age: 45}));
 
 
-class player {
-    // public name : string;
-    // readonly age : number;
-    // private country : string;
+// class player {
+//     // public name : string;
+//     // readonly age : number;
+//     // private country : string;
 
-    // constructor(n : string, a : number, c: string) {
-    //     this.name = n,
-    //     this.age = a,
-    //     this.country = c
-    // }
+//     // constructor(n : string, a : number, c: string) {
+//     //     this.name = n,
+//     //     this.age = a,
+//     //     this.country = c
+//     // }
 
-    //Access Modifiers
-    constructor( 
-        public name : string,
-        readonly age : number,
-        private country : string,
-        ) {}
-    play(){
-        console.log(`${this.name} from ${this.country} is playing!`);
-    }
-}
+//     //Access Modifiers
+//     constructor( 
+//         public name : string,
+//         readonly age : number,
+//         private country : string,
+//         ) {}
+//     play(){
+//         console.log(`${this.name} from ${this.country} is playing!`);
+//     }
+// }
 
 const John = new player("John", 39, "bangladesh",)
 const Gates = new player("Gates", 45, "bangladesh",)
@@ -62,7 +64,7 @@ const players : player[] = []
 players.push(John);
 players.push(Gates)
 
-console.log(Gates.age);
+console.log(Gates, John);
 
 // console.log(John, Gates);
 
