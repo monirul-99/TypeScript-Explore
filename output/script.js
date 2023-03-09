@@ -54,3 +54,20 @@ let threeDOption = {
     height: 10
 };
 drawRectangle(threeDOption);
+// Generics
+const addId = (obj) => {
+    let id = Math.round(Math.random() * 11);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addId({
+    name: "Monirul",
+    age: 23,
+    country: "Bangladesh"
+});
+// let user = {name: "Monirul"}
+addId(user);
+const response1 = {
+    status: 200,
+    type: "Better",
+    data: true
+};

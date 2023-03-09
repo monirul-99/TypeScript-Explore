@@ -88,3 +88,32 @@ let threeDOption = {
     height: 10
 }
 drawRectangle(threeDOption)
+
+// Generics
+
+const addId = <T extends {name: string, age: number}>(obj : T) => {
+    let id = Math.round(Math.random() * 11)
+    return {...obj, id}
+}
+
+let user = addId({
+    name: "Monirul",
+    age: 23,
+    country: "Bangladesh"
+})
+
+// let user = {name: "Monirul"}
+
+addId(user)
+
+interface APIResponse<T>{
+    status: number;
+    type: string;
+    data: T
+}
+
+const response1 : APIResponse<boolean> = {
+    status: 200,
+    type: "Better",
+    data: true
+}
