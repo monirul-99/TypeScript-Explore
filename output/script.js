@@ -19,10 +19,19 @@ userDetails = (a, userInfo) => {
 };
 console.log(userDetails(56, { name: "Monirul Islam", age: 45 }));
 class player {
-    constructor(n, a, c) {
-        this.name = n,
-            this.age = a,
-            this.country = c;
+    // public name : string;
+    // readonly age : number;
+    // private country : string;
+    // constructor(n : string, a : number, c: string) {
+    //     this.name = n,
+    //     this.age = a,
+    //     this.country = c
+    // }
+    //Access Modifiers
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
     play() {
         console.log(`${this.name} from ${this.country} is playing!`);
@@ -33,4 +42,5 @@ const Gates = new player("Gates", 45, "bangladesh");
 const players = [];
 players.push(John);
 players.push(Gates);
-console.log(John, Gates);
+console.log(Gates.age);
+// console.log(John, Gates);

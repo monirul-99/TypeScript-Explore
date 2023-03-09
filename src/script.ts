@@ -33,16 +33,22 @@ console.log(userDetails(56, {name: "Monirul Islam", age: 45}));
 
 
 class player {
-    name : string;
-    age : number;
-    country : string;
+    // public name : string;
+    // readonly age : number;
+    // private country : string;
 
-    constructor(n : string, a : number, c: string) {
-        this.name = n,
-        this.age = a,
-        this.country = c
-    }
+    // constructor(n : string, a : number, c: string) {
+    //     this.name = n,
+    //     this.age = a,
+    //     this.country = c
+    // }
 
+    //Access Modifiers
+    constructor( 
+        public name : string,
+        readonly age : number,
+        private country : string,
+        ) {}
     play(){
         console.log(`${this.name} from ${this.country} is playing!`);
     }
@@ -56,4 +62,7 @@ const players : player[] = []
 players.push(John);
 players.push(Gates)
 
-console.log(John, Gates);
+console.log(Gates.age);
+
+// console.log(John, Gates);
+
