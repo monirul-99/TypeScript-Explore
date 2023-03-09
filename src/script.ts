@@ -1,4 +1,5 @@
 import {player} from "./class/player.js"
+import {IsPlayer} from "./interface/isPlayer.js"
 
 let add: (x: number, y: number) => number
 
@@ -57,14 +58,33 @@ console.log(userDetails(56, {name: "Monirul Islam", age: 45}));
 // }
 
 const John = new player("John", 39, "bangladesh",)
-const Gates = new player("Gates", 45, "bangladesh",)
+let Gates: IsPlayer;
+
+Gates = new player("Gates", 45, "bangladesh",)
 
 const players : player[] = []
 
 players.push(John);
 players.push(Gates)
 
-console.log(Gates, John);
 
-// console.log(John, Gates);
+console.log(Gates);
 
+
+// interface Details for objects
+interface RectangleOption{
+    width: number;
+    length: number;
+    // height: number;
+}
+function drawRectangle(option: RectangleOption){
+    let width = option.width
+    let length = option.length
+}
+
+let threeDOption = {
+    width: 30,
+    length: 20,
+    height: 10
+}
+drawRectangle(threeDOption)

@@ -38,9 +38,19 @@ console.log(userDetails(56, { name: "Monirul Islam", age: 45 }));
 //     }
 // }
 const John = new player("John", 39, "bangladesh");
-const Gates = new player("Gates", 45, "bangladesh");
+let Gates;
+Gates = new player("Gates", 45, "bangladesh");
 const players = [];
 players.push(John);
 players.push(Gates);
-console.log(Gates, John);
-// console.log(John, Gates);
+console.log(Gates);
+function drawRectangle(option) {
+    let width = option.width;
+    let length = option.length;
+}
+let threeDOption = {
+    width: 30,
+    length: 20,
+    height: 10
+};
+drawRectangle(threeDOption);
