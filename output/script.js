@@ -1,7 +1,20 @@
 "use strict";
-const userDetails = (id, user) => {
-    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+let add;
+add = (a, b) => {
+    return a + b;
 };
-const syaHello = (user) => {
-    console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} %${user.name}`);
+let calculation;
+calculation = (a, b, c) => {
+    if (c === 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
 };
+console.log(calculation(8, 4, "minus"));
+let userDetails;
+userDetails = (a, userInfo) => {
+    return `Id Number : ${a} || Name : ${userInfo.name} Age ${userInfo.age}`;
+};
+console.log(userDetails(56, { name: "Monirul Islam", age: 45 }));

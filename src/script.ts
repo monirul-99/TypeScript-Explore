@@ -1,10 +1,32 @@
-type stringOrNum = string | number
-type userType = {name: string, age : number}
+let add: (x: number, y: number) => number
 
-const userDetails = (id: stringOrNum, user : userType) => {
-    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
+add = (a: number , b : number) => {
+    return a + b
 }
 
-const syaHello = (user: userType) => {
-    console.log(`Hello ${user.age > 50? "Sir" : "Mr."} %${user.name}`);
+let calculation: (a:number, b:number, c:string) => number;
+
+calculation=(a:number, b:number,c:string) => {
+    if(c === 'add'){
+        return a + b
+    } else{
+return a - b
+    }
 }
+
+console.log(calculation(8, 4, "minus"));
+
+
+let userDetails: (a:number | string, userInfo : {
+    name: string,
+    age: number
+}) => void
+
+userDetails = (a : number | string, userInfo: {
+    name: string,
+    age: number
+}) => {
+return `Id Number : ${a} || Name : ${userInfo.name} Age ${userInfo.age}`
+}
+
+console.log(userDetails(56, {name: "Monirul Islam", age: 45}));
