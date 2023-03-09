@@ -1,6 +1,7 @@
 "use strict";
-let myFunc;
-myFunc = (a, b, c = "Welcome Back") => {
-    console.log(`Hello ${a}_${b}`);
+const userDetails = (id, user) => {
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
-myFunc("monirul", 99);
+const syaHello = (user) => {
+    console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} %${user.name}`);
+};
